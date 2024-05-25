@@ -14,6 +14,15 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\achiSubheading}[3]{ 
+    \vspace{5pt}% Removed the fourth argument since it's unused
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r} % Changed 'r' to 'p{0.8\textwidth}'
+        \textbf{#1} & #2 \\
+        \multicolumn{2}{p{0.97\textwidth}}{\textit{\small#3}} % Added a multicolumn to span both columns for the description
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
